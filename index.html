@@ -9,9 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -56,11 +55,11 @@
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
         <!-- Slider main container -->
         <div class="swiper">
-            
-         <!-- If we need pagination -->
-         <div class="swiper-pagination"></div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
             <!-- Additional required wrapper -->
-           
+
             <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide"><img src="img/ApacheKafka.svg"
@@ -77,6 +76,32 @@
 
 
             <!-- If we need navigation buttons -->
+        </div>
+        <div class="card">
+            <!--1a Linha-->
+            <div class="card__descrição">
+                <!--1a Coluna-->
+                <div class="descrição">
+                    <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descrição__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descrição__texto">Construindo uma aplicação integra com a plataforma do Google.</p>
+                </div>
+                <!--2a Colula-->
+                <img src="img/Angular2.svg" class="descrição__imagem" alt="Livro angular do Alura Books">
+            </div>
+
+            <!--2a Linha-->
+            <div class="card__botoes">
+                <!--1a Coluna-->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
+                </ul>
+                
+        <a href="Saiba mais" class="botoes__ancora">Saiba mais</a>
+            </div>
+            
+
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
