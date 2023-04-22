@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
-      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -54,11 +54,11 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
         <!-- Slider main container -->
-        <div class="swiper">
-
+        <div class="swiper">            
+            <!-- Additional required wrapper -->
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
+
 
             <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -73,6 +73,7 @@
                 <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugol da Alura Books"></div>
                 <div class="swiper-slide"><img src="img/Angular.svg" alt="Livro sobre Angular da Alura Books"></div>
             </div>
+
 
 
             <!-- If we need navigation buttons -->
@@ -97,13 +98,61 @@
                     <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
                     <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho"></li>
                 </ul>
-                
-        <a href="Saiba mais" class="botoes__ancora">Saiba mais</a>
+
+                <a href="Saiba mais" class="botoes__ancora">Saiba mais</a>
             </div>
-            
+
 
         </div>
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais Vendidos</h2>
+        <div class="swiper">       
+            <!-- Additional required wrapper -->
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/Angular.svg" alt="Livro Angular Alura Books"></div>
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro Apache"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro de Angular 2"></div>
+                <div class="swiper-slide"><img src="img/Angular.svg" alt="Livro Angular Alura Books"></div>
+                <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro Apache"></div>
+                <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro de Angular 2"></div>
+
+            </div>
+
+        </div>
+
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descrição">
+                <!-- 1º coluna -->
+                <div class="descrição">
+                    <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                    <h3 class="descrição__titulo">Autora do Mês</h3>
+                    <h2 class="descrição__titulo-livro">Eliene Santos da Silva</h2>
+                    <p class="descrição__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.
+                    </p>
+                </div>
+                <!-- 2º coluna -->
+                <img src="img/EscritoraOLD.svg" class="descrição__imagem">
+            </div>
+
+            <!-- 2º linha -->
+            <div class="card__botoes">
+                <!-- 1º coluna -->
+                <ul class="botoes">
+                    <li class="botoes__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                </ul>
+                <!-- 2º coluna -->
+                <a href="#" class="botoes__ancora">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
