@@ -28,12 +28,12 @@
     margin-bottom: 0.5em;
 }
 
-.card__botoes {
+.card__botões {
     display: flex;
     justify-content: space-between;
 }
 
-.botoes {
+.botões {
     display: flex;
 }
 
@@ -48,7 +48,6 @@
 .descrição__titulo {
     color: var(--laranja);
     font-weight: 700;
-    font-size: 16px;
 }
 
 .descrição__titulo-livro {
@@ -62,11 +61,11 @@
     font-size: 14px;
 }
 
-.botoes__item{
+.botões__item {
     margin: 0 0.5em;
 }
 
-.botoes__ancora{
+.botões__ancora {
     background-color: var(--laranja);
     padding: 1em 2.2em;
     color: var(--branco);
