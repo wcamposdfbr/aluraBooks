@@ -7,6 +7,10 @@
     display: inline-block;
 }
 
+.container__botao:checked~.container__rotulo>.cabeçalho__menu-hamburguer {
+    background-image: url(../img/Menu-Aberto.svg);
+}
+
 .cabeçalho {
     background-color: var(--branco);
     display: flex;
@@ -65,6 +69,9 @@
 .opções {
     display: none;
 }
+.container__texto {
+    display: none;
+}
 
 @media screen and (min-width: 1024px) {
 
@@ -114,4 +121,28 @@
         display: none;
     }
 
+    .container__texto {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--preto);
+    }
+
+    .container__texto{
+        display: block;
+    }
+
+    .opções{
+        margin-right: auto;
+    }
+
+    .cabeçalho{
+        padding: 0 2em;
+    }
 }
